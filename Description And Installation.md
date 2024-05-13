@@ -1,9 +1,11 @@
 Description:
+
     Tom, Josh's mentor in JavaScript, prefers remote sessions due to the ongoing Covid situation. He wants to create an online coding web application that allows him to share code with Josh, observe Josh's coding in real-time, and provide guidance.
 
 
 
 The application consists of two main pages:
+
     1.Lobby Page:
         Displays the title "Choose code block" and a list of at least 4 code block items.
         Each code block item represents a specific coding scenario (e.g., "Async case").
@@ -18,6 +20,7 @@ The application consists of two main pages:
 
 
 Technologies Used:
+
     Node.js
     WebSockets
     React.js
@@ -46,15 +49,17 @@ Installation:
 
     If React + Node.js is installed Clone My git repository and install Project Dependencies by doing (npm install) on the root folder and on the websocket-server as well !! 
     
-    To start the server:
-        1.Enter websocket-server
-        2.Enter CMD and type <node index.js>
-        3.The server will start on port 3001 <WebSocket>
+        To start the server:
 
-    To start the client 
-        1.On the root folder enter CMD
-        2.Type npm run start \ npm start 
-        3.The app will start on your browser
+            1.Enter websocket-server
+            2.Enter CMD and type <node index.js>
+            3.The server will start on port 3001 <WebSocket>
+
+        To start the client:
+
+            1.On the root folder enter CMD
+            2.Type npm run start \ npm start 
+            3.The app will start on your browser
 
 
 
