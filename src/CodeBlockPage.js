@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import codeBlocks from "./codeBlocksData";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
-import "highlight.js/styles/default.css"; // Import the default stylesheet
-import "./customHighlight.css"; // Import custom CSS for highlighting
+import "highlight.js/styles/default.css"; 
+import "./customHighlight.css"; 
 
 hljs.registerLanguage("javascript", javascript);
 
@@ -17,7 +17,7 @@ const CodeBlockPage = () => {
   const [role, setRole] = useState("");
   const [sessionId, setSessionId] = useState("");
   const [code, setCode] = useState("");
-  const [isReadOnly, setIsReadOnly] = useState(true); // Initially set to read-only
+  const [isReadOnly, setIsReadOnly] = useState(true); 
   const [showSmiley, setShowSmiley] = useState(false);
   const [isCodeCorrect, setIsCodeCorrect] = useState(false);
 
@@ -61,14 +61,14 @@ const CodeBlockPage = () => {
           // set the role to 'student'
           if (!storedRole || storedRole === "student") {
             setRole("student");
-            setIsReadOnly(false); // Allow student to edit code
+            setIsReadOnly(false); 
           }
         }
       } else if (message.type === "codeChange") {
         setCode(message.code);
         // Highlight code after updating
         hljs.highlightBlock(codeRef.current);
-        codeRef.current.classList.add("green-highlight"); // Apply custom class
+        codeRef.current.classList.add("green-highlight"); 
       }
     };
 
